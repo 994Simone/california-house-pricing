@@ -1,0 +1,1 @@
+from sklearn.preprocessing import StandardScaler # %%def scale_data(dict_input: dict):        scaler = StandardScaler()        dict_input['x_train_s'] = scaler.fit_transform(dict_input['x_train'])        dict_input['x_test_s'] = scaler.transform(dict_input['x_test'])        return dict_input
